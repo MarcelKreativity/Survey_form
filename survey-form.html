@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Enterprise survey-form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <header>
+        <div id="heading">
+            <h1 id="title">MarcelKreativity Enterprise</h1>
+            <p id="description">We're constantly striving to improve and would love to hear your thoughts, Please take this survey to share your opinions and help us shape our future.</p>
+        </div>
+    </header>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Full name:</label>
+        <input type="text" id="name" placeholder="Enter your Full Name" required>
+
+        <label for="email" id="email-label">Email address:</label>
+        <input type="email" id="email" placeholder="Insert your Email Address" required>
+
+        <label for="age" id="number-label">Age:</label>
+        <input type="number" id="number" min="15" max="50" placeholder="Age(in years)" required>
+
+        <div>
+            <p>What is your employment status?</p>
+            <select id="dropdown">
+                <option value="" disabled selected>Select your current employment status</option>
+                <option value="option1">Employed full-time</option>
+                <option value="option2">Employed part-time</option>
+                <option value="option3">Self-employed</option>
+                <option value="option5">Unemployed</option>
+                <option value="option6">Retired</option>
+                <option value="option7">Freelance/contract employment</option>
+                <option value="option8">Student</option>
+            </select>    
+        </div>
+
+        <div>
+            <p>How likely would you recommend our service to a friend, family or colleague? </p>
+            <input type="radio" name="recommend" value="Number1"> Very likely<br>
+            <input type="radio" name="recommend" value="Number2"> Likely<br>
+            <input type="radio" name="recommend" value="Number3"> Neutral<br>
+            <input type="radio" name="recommend" value="Number4"> Unlikely<br>
+            <input type="radio" name="recommend" value="Number5"> Very Unlikely
+        </div>
+
+        <div>
+            <p>What improvements would you like to see in our service? </p> <small>(Select the ones that applies)</small> <br>
+            <input type="checkbox" class="type" value="response"> Faster response times<br>
+            <input type="checkbox" class="type" value="Quality"> More features<br>
+            <input type="checkbox" class="type" value="User interface"> Better user interface <br>
+            <input type="checkbox" class="type" value="Price"> More affordable pricing<br>
+            <input type="checkbox" class="type" value="Other"> Others <small>(please specify)</small><input type="text" id="option">
+        </div>
+
+        <div>
+            <p>How satisfied are you with our service? </p>
+            <input type="radio" name="satisfaction" value="OptionA"> Very Satisfied <br>
+            <input type="radio" name="satisfaction" value="OptionB"> Satisfied<br>
+            <input type="radio" name="satisfaction" value="OptionC"> Neutral<br>
+            <input type="radio" name="satisfaction" value="OptionD"> Disatisfied<br>
+            <input type="radio" name="satisfaction" value="OptionE"> Very Disatisfied<br>
+        </div>
+
+        <div>
+            <p>Do you have any other comments or suggestions?</p>
+            <textarea cols="93" rows="7" placeholder=" Share your additional thoughts......"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+</body>
+
+<script src="survey.js"></script>
+
+</html>
+
+
